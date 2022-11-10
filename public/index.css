@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Orbitron:wght@500&family=Quicksand:wght@300&display=swap");
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
+}
 
+:root {
+  --original-red: color: rgb(250, 94, 38);
 }
 
 body {
-  /* font-family: "DotGothic16", sans-serif; */
-  font-family: "Orbitron", sans-serif;
+  font-family: "DotGothic16", sans-serif;
+  /* font-family: "Orbitron", sans-serif; */
   /* font-family: 'Orbitron', sans-serif; */
   /* font-family: 'Quicksand', sans-serif; */
   /* font-family: 'Raleway', Arial, sans-serif; */
   background-color: #161616;
   color: rgb(250, 94, 38);
-  text-shadow: 0 0 .75rem rgba(250, 94, 38, 0.576);
-  letter-spacing: .23rem;
+  letter-spacing: 0.11rem;
+  font-size: 1.32em;
 }
 
 /* main {
@@ -24,38 +28,42 @@ body {
   align-items: center;
 } */
 
-
 nav {
   position: fixed;
   background-color: #003a45;
-  color: rgb(250, 94, 38);
+  color: rgb(249, 132, 89);
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: solid thick rgb(0, 0, 0);
-  width:100%;
+  width: 100%;
   padding-top: 0;
   /* margin-bottom:10rem; */
 }
 
 #navbarRight {
   padding-right: 5em;
+  background-color: rgb(164, 164, 164);
+}
+
+#navbarRight > * {
+  padding: 1em;
 }
 
 #navbarLeft {
   padding-left: 5em;
 }
 
-.about {
+.innerContainer {
   padding-left: 3em;
   padding-right: 3em;
 }
 
-.aboutContainer {
+.outerContainer {
   border: thin solid rgb(38, 253, 0);
   padding-top: 6rem;
   overflow: hidden;
-  margin:1rem;
+  margin: 1rem;
   margin-top: 0;
   /* margin-right: 2rem; */
   display: flex;
@@ -67,4 +75,16 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#navbarLeft {
+  text-shadow: 0 0 0.75rem rgba(250, 94, 38, 0.576);
+}
+
+h3 {
+  border-bottom: solid rgb(109, 109, 109);
+}
+
+#lzxVidiot {
+  float: left;
 }
